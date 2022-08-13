@@ -1,0 +1,406 @@
+html{
+    margin: auto;
+    padding: auto;
+    background: rgb(255 255 255);
+    width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+*{font-family: 'Figtree', sans-serif;}
+.blue{
+    color:rgb(100 92 255);
+}
+        /* FIRST BOX */
+header{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw 1vh 5vw;
+}
+header h2{
+    font-size: 1.2rem;
+}
+header img{
+    width: 80px;
+    height: 20px;
+}
+h1{
+    font-size: 2.4rem;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80vw;
+    color: rgb(255 255 255);
+    background:rgb(100 92 255);
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    justify-content: center;
+    padding: 0 10vw 0 10vw;
+}
+.intro a{
+    text-decoration: none;
+    color:rgb(255 255 255);
+}
+.spacing{
+    letter-spacing: .4rem;
+    line-height: 3rem;
+}
+p{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.intro p{
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+button{
+    background: rgb(100 92 255);
+    width: 20vw;
+    padding: 4px 0 4px 0;
+    border-radius: 5px;
+    border: 1px transparent;
+    box-shadow: .9px .9px 4px 1px rgb(90, 83, 231);
+    margin-top: 3vh;
+}
+.intro button{
+    max-width: 150px;
+}
+        /* FIRST BOX */
+        /* SECTION INFO */
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.wrap{
+    width: 80vw;
+    margin-bottom: 10vh;
+}
+.info img{
+    width: 80vw;
+    max-width: 510px;
+    height: 30vh;
+    margin-bottom: 5vh;
+}
+.info a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 900;
+    font-size: .8rem;
+}
+.services{
+    background: #f8fbfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    padding: 2vh 10vw 2vh 10vw;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapper img{
+    width: 45px;
+    height: 50px;
+    margin: auto;
+}
+.wrapper h3{
+    margin-bottom: auto;
+}
+.moneySaving,.endlessHiking,.comfort{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 32vw;
+    text-align: center;
+    margin: 5vh 2vw 2vh 2vw;
+    max-width: 300px;
+}
+        /* SECTION INFO */
+        /* FEATURED TOURS */
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    width: 100%;
+}
+main>a{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 900;
+    color: blue;
+}
+.BoxWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+[class^="box"]{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2vh 3vw 5vh 3vw;
+    max-width: 450px;
+}
+.mountains,.mountainsSummer,.CityNight,.Africa{
+    width: 80vw;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+}
+.date{
+    border: transparent;
+    margin-top: 1.3vh;
+    width: fit-content;
+    padding: 4px;
+    background: rgb(100 92 255);
+    font-size: .8rem;
+    font-weight: 800;
+}
+[class^="box"] button{
+    background: rgb(255 255 255);
+    box-shadow: 0.5px .5px 10px rgb(231, 231, 231);
+    min-height: 140px;
+    max-width: 450px;
+}
+.Active{
+    width: 80vw;
+    height: 15vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+        /* HOVER/ACTIVE EFFECT FOR BUTTONS */
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms ease-in;
+}
+button:active{
+    transform: scale(1.15);
+    transition: 10ms;
+}
+        /* HOVER/ACTIVE EFFECT FOR BUTTONS */
+.locationAndCost{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.mountains{
+    background-image: url("/foto/China.jpg");
+    max-width: 450px;
+    z-index: 1;
+}
+
+.mountainsSummer{
+    background-image: url("/foto/Java.jpg");
+    max-width: 450px;
+    z-index: 1;
+}
+.CityNight{
+    background-image: url("/foto/City.jpg");
+    max-width: 450px;
+    z-index: 1;
+}
+.Africa{
+    background-image: url("/foto/Kenya.jpg");
+    max-width: 450px;
+    z-index: 1;
+}
+.mini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1em;
+    color: rgb(100 92 255);
+}
+.mini img{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+.boxFour{
+    margin-bottom: 0;
+}
+        /* FEATURED TOURS */
+            /* GALERY */
+.gallery{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    background-color: #f8fbfc;
+}
+.gallery img{
+    width: 90vw;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    border-bottom: .5vh solid rgb(100 92 255);
+    margin: 0;
+}
+            /* GALERY */
+            /* Footer */
+footer{
+    background: rgb(100 92 255);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #f8fbfc;
+}
+.text{
+    width: 40vw;
+    margin: 0 0 5vh 3vw;
+}
+.text h1{
+    text-align: center;
+}
+.text p{
+    font-size: 1rem;
+}
+fieldset{
+    border: transparent;
+}
+input{
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+input[type="email"]{
+    width:30vw;
+}
+input[type="submit"]{
+    height: 3.7vh;
+    min-width: 70px;
+    font-size: 1rem;
+}
+input::placeholder{
+    padding-left: 5px;
+    font-weight: 900;
+    color: black;
+}
+            /* Footer */
+summary a{
+    text-decoration: none;
+    color: #f8fbfc;
+    margin-right: 1vw;
+}
+summary p{
+    font-weight: 100;
+    font-size: .9rem;
+}
+summary{
+    background-color: #222222;
+    color: #f8fbfc;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+summary img{
+    margin-top: 2vh;
+}
+            /* MEDIA QUARIES */
+@media screen and (min-width:40em){
+.gallery img{
+    max-width: 490px;
+    border-bottom: transparent;
+    width: max-content;
+}
+.BoxWrap{
+    justify-content: center;
+}
+.intro{
+    overflow: hidden;
+    position: relative;
+}
+.intro h1,p,button{
+    position: relative;
+}
+.intro img{
+    display: initial;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: .6;
+}
+
+h1 br{
+    display: none;
+}
+.textWrap p{
+    font-size: 1rem;
+}
+.wrapper{
+    justify-content: center;
+}
+}
+@media screen and (min-width:1080px) {
+.wrap{
+    display: flex;
+}
+.imgWrap{
+    border: 6px solid blue;
+    border-radius: 5px;
+    width: fit-content;
+    height: 40vh;
+}
+.wrap img{
+    transform: translate(20px, 20px);
+    height: 40vh;
+}
+.textWrap{
+    margin-left: 5vw;
+}
+.BoxWrap{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header .menu{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+}
+header a{
+    display: contents;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    padding: 50px;
+}
+.mountains:hover,.mountainsSummer:hover,.CityNight:hover,.Africa:hover{
+    transform: scale(1.5);
+    transition: all 1s ease-in; 
+}
+}
+            /* MEDIA QUARIES */
+
+
+
+
